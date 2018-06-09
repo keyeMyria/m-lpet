@@ -1,0 +1,127 @@
+.MakeMain{
+    :global{
+        .search_header{
+            display: flex;
+            height: 120px;
+            border-top:1px solid #979797;
+            border-bottom:1px solid #979797;
+            background: #F6F8FA;
+            >div{
+                flex: 1;
+                &:nth-child(2){
+                    border-left:1px solid #979797;
+                }
+            }
+            .search_query{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                .line{
+                    width: 1px;
+                    height: 40px;
+                    background: #108EE9;
+                    position: relative;
+                    margin-right: 20px;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        width: 15px;
+                        height: 1px;
+                        background: #108EE9;
+                        left: 0px;
+                        top: 0px;
+                    }
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: 15px;
+                        height: 1px;
+                        background: #108EE9;
+                        left: 0px;
+                        bottom: 0px;
+                    }
+                }
+                .time{
+                    font-size: 26px;
+                }
+
+            }
+            .search_sum,.search_fact{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .search_sum{
+                flex-direction: row;
+                justify-content: center;
+            }
+
+        }
+
+        .make_list{
+            .contact{
+                color: rgba(0,0,0,0.45);
+            }
+            ul{
+                li{
+                    padding: 30px;
+                    border-bottom: 1PX solid #979797;
+                    .title{
+                        display: inline-block;
+                        align-items: center;
+                        position: relative;
+                        margin-bottom: 20px;
+                        width: 100%;
+                        .status{
+                            font-size: 0.26rem;
+                            border-radius: 0.1rem;
+                            border: 1PX solid #108ee9;
+                            height: 0.5rem;
+                            line-height: 0.5rem;
+                            padding: 0 0.2rem;
+                            float: right;
+                        }
+                        .name{
+                            font-weight: bold;
+                            margin-right: 50px;
+                        }
+                        .no{
+                            color: #FF370C;
+                            border-color: #FF370C;
+                        }
+                        .in{
+                            color: #78c896;
+                            border-color: #78c896;
+                        }
+                        .no.am-button-ghost.am-button-active{
+                            background: #FF370C;
+                            color: #fff;
+                        }
+                        .in.am-button-ghost.am-button-active{
+                            background: #78c896;
+                            color: #fff;
+                        }
+                    }
+                    .settle{
+                        margin-top: 20px;
+                        overflow: hidden;
+                        .am-button-inline{
+                            float: right;
+                            margin-left: 15px;
+                            border: 1PX solid #90959A;
+                            border-radius: 8px;
+                            color: rgba(0,0,0,0.85);
+                        }
+                        .am-button-ghost.am-button-active{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

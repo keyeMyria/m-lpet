@@ -1,0 +1,67 @@
+.setIntegral{
+    background: #F6F8FA;
+    min-height: e("calc(100% - 0.9rem)");
+    position: relative;
+    :global{
+        label{
+            width: auto;
+        }
+        .am-switch input[type="checkbox"]:checked + .checkbox {
+            background: #008EE1;
+        }
+        .am-list{
+            .am-list-item{
+                height: 110px;
+            }
+            .am-list-extra{
+                flex-basis:auto;
+            }
+            .am-list-content{
+                font-size: 30px;
+            }
+        }
+
+        .list{
+            border-top: 1PX dashed #C1C1C1;
+            padding: 30px;
+            background: #fff;
+            .item{
+                display: flex;
+                align-items: center;
+                font-size: 30px;
+                &:last-child{
+                    margin-top: 40px;
+                }
+                >span{
+                    display: block;
+                    width: 150px;
+                }
+                .input-control{
+                    flex: 1;
+                    padding: 15px 30px;
+                    border-radius: 10px;
+                    border: 1PX solid #B2B4B6;
+                    position: relative;
+                    input{
+                        border: none;
+                        outline: none;
+                        height: 40px;
+                        width: 100%;
+                    }
+                    span{
+                        position: absolute;
+                        right: 20px;
+                        color: #BABABA;
+                    }
+                }
+            }
+        }
+        .submit{
+            padding: 0px 30px;
+            position: absolute;
+            top: 600px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}

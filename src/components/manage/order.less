@@ -1,0 +1,229 @@
+.order{
+    :global{
+        .order_header{
+            width: 100%;
+            padding-bottom: 30px;
+            background: #F6F8FA;
+            overflow: hidden;
+            border-top: 1px solid  #C1C1C1;
+            border-bottom: 1px solid  #C1C1C1;
+            p{
+                text-align: center;
+                margin-top: 20px;
+                color: rgba(0,0,0,0.23);
+            }
+            .select_content{
+                width: 500px;
+                margin: 0 auto;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                >div{
+                    width: 220px;
+                    height: 90px;
+                    border: 1px solid #AFB2B5;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #fff;
+                    .icon{
+                        width: 55px;
+                        height: 40px;
+                        margin-right: 20px;
+                    }
+                    .text{
+                        font-size: 30px;
+                        color: rgba(0,0,0,0.23);
+                    }
+                }
+                .huiyuan{
+                    .icon{
+                        background: url(../../assets/vip.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+                .sanke{
+                    .icon{
+                        background: url(../../assets/sanke.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+            .active{
+                display: flex;
+                justify-content:center;
+                >div{
+                    .text{
+                        color: rgba(0,0,0,0.85);
+                    }
+                }
+                .huiyuan{
+                    .icon{
+                        background: url(../../assets/vip_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+                .sanke{
+                    .icon{
+                        background: url(../../assets/sanke_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+        }
+
+        .order_content{
+            padding: 20px;
+            .order_item{
+                width: 100%;
+                padding: 30px;
+                border: 1px solid #FFC192;
+                border-radius: 16px;
+                box-sizing: border-box;
+                position: relative;
+                margin-bottom: 20px;
+                overflow: hidden;
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width:97%;
+                    height: 5px;
+                    background: #FFC293;
+                    top:-5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                .item_header{
+                    overflow: hidden;
+                    .item_img{
+                        float: left;
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 10px;
+                        background: #ccc;
+                        margin-right: 30px;
+                    }
+                }
+                .item_title{
+                    float: left;
+                }
+                .item_control{
+                    width: 150px;
+                    height: 40px;
+                    border: 1px solid #CACDD0;
+                    border-radius: 10px;
+                    float: right;
+                    margin-top: 20px;
+                    overflow: hidden;
+                    position: relative;
+                    button{
+                        width:40px;
+                        height: 100%;
+                        position: absolute;
+                        text-align: center;
+                        line-height: 40px;
+                        outline: none;
+                        background: transparent;
+                        border:none;
+                        color: #CACDD0;
+                    }
+                    button:active{
+                        background: #ccc;
+                        color: #fff;
+                    }
+                    .sub{
+                        left: 0px;
+                        top: 0px;
+                        border-right: 1px solid #CACDD0;
+                    }
+                    .add{
+                        right: 0px;
+                        top: 0px;
+                        border-left: 1px solid #CACDD0;
+                    }
+                    span{
+                        position: absolute;
+                        left: 40px;
+                        display: inline-block;
+                        width: 70px;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .item_info{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                span{
+                    i{
+                        font-style: normal;
+                    }
+                }
+                span:not(:first-child){
+                    i{
+                        display: inline-block;
+                        width: 100px;
+                        height: 50px;
+                        border: 1px solid #CACDD0;
+                        color: #FF370C;
+                        text-align: center;
+                    }
+                }
+            }
+            .item_crew{
+                display: flex;
+                align-items: center;
+                float: left;
+                span{
+                    color: #000;
+                }
+            }
+        }
+
+        
+    }
+}
+
+:global{
+    .am-popup-body{
+        .am-list-header{
+            >div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .cancel{
+                color: rgba(0,0,0,0.65);
+            }
+            .affirm{
+                color: #1692EB;
+            }
+            .title{
+                font-size:35px;
+            }
+        }
+        .am-list-body{
+            max-height: 6rem;
+            overflow-y: auto;
+        }
+        .am-list-body div:not(:last-child) .am-list-line:after{
+            width: 690px!important;
+        }
+        .am-list-content{
+            text-align: center!important;
+            color: rgba(0,0,0,0.85)!important;
+            font-size: 34px!important;
+            padding: 20px 0px!important;
+        }
+        .active .am-list-content{
+            color: rgba(22,146,235,0.85)!important;
+        }
+    }
+}

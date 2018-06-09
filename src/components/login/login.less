@@ -1,0 +1,170 @@
+.login{
+    width: 100%;
+    height: 100%;
+    :global{
+        .logoImg{
+            width: 100%;
+            height: 420px;
+            background: url(../../assets/logo1.png);
+            background-size: 100% 100%;
+        }
+        .tabs{
+            width: 570px;
+            margin:0 auto;
+            margin-bottom: 55px;
+            overflow: hidden;
+            .tab{
+                float: left;
+                padding: 13px 0px 24px 0px;
+                font-size: 35px;
+                color: rgba(0,0,0,0.50);
+                border-bottom: 1PX solid #fff;
+                &:last-child{
+                    margin-left: 88px;
+                }
+                transition: all .3s;
+            }
+            .active{
+                color: #1692EB;
+                border-bottom: 1PX solid #1692EB;
+            }
+        }
+        .loginMain{
+            width: 570px;
+            margin:0 auto;
+            .user{
+                background: url(../../assets/user.png);
+            }
+            .pass{
+                background: url(../../assets/password.png);
+            }
+            .icon{
+                background-size: cover;
+                height: 0.44rem;
+                width: 0.44rem ;
+            }
+            .am-list{
+                .am-list-body{
+                    border-top: none;
+                    &::after{
+                        border: none;
+                    }
+                    .am-list-item::after{
+                        transition: border .3s;
+                    }
+                    .am-list-item:last-child{
+                        &::after{
+                            display: block;
+                        }
+                    }
+                    .am-input-focus::after{
+                        border-bottom:2PX solid #108EE9;
+                    }
+                }
+            }
+            .am-input-label-5{
+                width:80px;
+            }
+            .am-list-item{
+                height:100px;
+                margin-top: 20px;
+            }
+            .am-list-item.am-input-item:after{
+                left:0;
+            }
+            .checkox{
+                margin-top: 34px;
+                overflow: hidden;
+                .am-checkbox-wrapper{
+                    float: right;
+                    width: auto;
+                }
+                .am-list-content{
+                    font-size: 30px;
+                    color: rgba(0,0,0,0.65);
+                }
+                .am-checkbox-inner{
+                    border-radius:5px;
+                    border: 1px solid #888;
+                }
+            }
+            .submit{
+                margin-top: 40px;
+            }
+            .register-content{
+                margin-top: 40px;
+                display: flex;
+                justify-content: space-between;
+                >a{
+                    font-size: 30px;
+                    color: rgba(0,0,0,0.40);
+                }
+            }
+        }
+        .code-content{
+            width: 570px;
+            margin:0 auto;
+            .user{
+                background: url(../../assets/user.png);
+            }
+            .pass{
+                background: url(../../assets/code.png);
+            }
+            .icon{
+                background-size: cover;
+                height: 0.44rem;
+                width: 0.44rem ;
+            }
+            .am-list{
+                .am-list-body{
+                    border-top: none;
+                    &::after{
+                        border: none;
+                    }
+                    .am-list-item::after{
+                        transition: border .3s;
+                    }
+                    .am-list-item:last-child{
+                        &::after{
+                            display: block;
+                        }
+                    }
+                    .am-input-focus::after{
+                        border-bottom:2PX solid #108EE9;
+                    }
+                }
+            }
+            .am-list-item .am-input-extra{
+                max-height: 100%;
+            }
+            .code-btn{
+                padding: 15px 20px;
+                border: 1PX solid #108EE9;
+                border-radius: 100px;
+                color: #108EE9;
+                font-size: 28px;
+                &:active{
+                    color: #B2B2B2;
+                    border-color: #B2B2B2;
+                }
+            }
+            .code-active{
+                color: #B2B2B2;
+                border-color: #B2B2B2;
+            }
+            .am-input-label-5{
+                width:80px;
+            }
+            .am-list-item{
+                height:100px;
+                margin-top: 20px;
+            }
+            .am-list-item.am-input-item:after{
+                left:0;
+            }
+            .submit{
+                margin-top: 104px;
+            }
+        }
+    }
+}

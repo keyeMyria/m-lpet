@@ -1,0 +1,38 @@
+.setDiscount{
+    background: #F6F8FA;
+    min-height: e("calc(100% - 0.9rem)");
+    position: relative;
+    :global{
+        .kong-content{
+            width: 100%;
+            height: e("calc(100vh - 3rem)");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .kong{
+                text-align: center;
+                img{
+                    width: 110px;
+                    height: 110px;
+                    margin-bottom:30px; 
+                }
+                p{
+                    color: #ABADAE;
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .discount-list{
+            .am-list{
+                .am-list-item {
+                    height: 110px;
+                }
+            }
+        }
+
+        .discount-edit{
+            height: e("calc(100vh - 0.9rem)");
+        }
+    }
+}

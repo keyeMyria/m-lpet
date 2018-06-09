@@ -1,0 +1,116 @@
+.system{
+    background: #F6F8FA;
+    min-height: e("calc(100% - 0.9rem)");
+    :global{
+        .system-header{
+            width: 100%;
+            height: 113px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            .icon{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #ccc;
+                margin-left: 37px;
+            }
+            .text{
+                font-size: 36px;
+                font-weight: bold;
+                color: #000;
+                margin-left: 25px;
+                img{
+                    height: 40px; 
+                    margin-left: 10px;
+                }
+            }
+            .btn{
+                margin-left: auto;
+                a{
+                    display: inline-block;
+                    padding: 5px 12px;
+                    color: #1692EB;
+                    border: 1PX solid #1692EB;
+                    border-radius: 10px;
+                    font-size: 26px;
+                    margin-right: 20px;
+                    &:active{
+                        color: #fff;
+                        background: #1692EB;
+                    }
+                }
+            }
+        }
+
+        .card-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            padding: 0px 10px;
+            padding-bottom: 10px;
+            &::after{
+                content: " ";
+                display: block;
+                width: 32%;
+                height: 190px;
+            }
+            .card-item{
+                width: 32%;
+                height: 190px;
+                border: 1PX solid #B8B8B8;
+                border-radius: 8px;
+                background: #fff;
+                margin-top: 10px;
+                // transition: background 200ms;
+                // &:active{
+                //     background: #ddd;
+                // }
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .icon{
+                    width: 90px;
+                    height: 90px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text{
+                    font-size: 28px;
+                }
+            }
+        }
+        
+        .am-list{
+            .am-list-item {
+                height: 110px;
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .exit{
+            margin-top: 20px;
+            padding-left: .3rem;
+            height: 110px;
+            line-height: 110px;
+            background: #fff;
+            color: #000;
+            transition: background 200ms;
+            &:active{
+                background: #ddd;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.registerMain {
+    :global {
+        .register-content {
+            width: 640px;
+            margin: 0 auto;
+            margin-top: 30px;
+            .user {
+                background: url(../../assets/user.png);
+            }
+            .code {
+                background: url(../../assets/code.png);
+            }
+            .pass {
+                background: url(../../assets/password.png);
+            }
+            .dian {
+                background: url(../../assets/dian.png)
+            }
+            .icon {
+                background-size: cover;
+                height: 0.44rem;
+                width: 0.44rem;
+            }
+            .am-list {
+                .am-list-body {
+                    border-top: none;
+                    &::after {
+                        border: none;
+                    }
+                    .am-list-item::after {
+                        transition: border .3s;
+                    }
+                    .am-list-item:last-child {
+                        &::after {
+                            display: block;
+                        }
+                    }
+                    .am-input-focus::after {
+                        border-bottom: 2PX solid #108EE9;
+                    }
+                }
+            }
+            .am-list-item .am-input-extra {
+                max-height: 100%;
+            }
+            .code-btn {
+                padding: 15px 20px;
+                border: 1PX solid #108EE9;
+                border-radius: 100px;
+                color: #108EE9;
+                font-size: 28px;
+                &:active {
+                    color: #B2B2B2;
+                    border-color: #B2B2B2;
+                }
+            }
+            .code-active {
+                color: #B2B2B2;
+                border-color: #B2B2B2;
+            }
+            .am-input-label-5 {
+                width: 80px;
+            }
+            .am-list-item {
+                height: 100px;
+                margin-top: 20px;
+            }
+            .am-list-item.am-input-item:after {
+                left: 0;
+            }
+            .submit {
+                margin-top: 104px;
+            }
+            .register-info {
+                margin-top: 55px;
+                text-align: center;
+                font-size: 28px;
+                color: rgba(0, 0, 0, 0.50);
+                span {
+                    color: rgba(0, 0, 0, 0.65);
+                }
+            }
+        }
+    }
+}
+
+:global {
+    .modal-content {
+        height: e("calc(100vh - 0.9rem)") !important;
+        position: absolute;
+        bottom: 0px;
+        .am-modal-content {
+            padding-top: 70px;
+            box-sizing: border-box; // padding-bottom: 0.94rem;
+            // overflow-y: auto;
+        }
+        .am-modal-close {
+            top: 30px;
+        }
+        .am-modal-body {
+            padding: 0px 33px;
+            position: relative;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            .modal-title {
+                margin-bottom: 40px;
+                font-size: 36px;
+                color: #000;
+                font-weight: bold;
+            }
+            .modal-body {
+                font-size: 32px;
+                text-align: left;
+                color: #333333;
+                padding-bottom: 0.94rem;
+                h2 {
+                    color: #000000;
+                    margin-bottom: 35px;
+                }
+                p {
+                    margin-bottom: 35px;
+                }
+            }
+            .toLink {
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                width: 100%;
+                z-index: 10;
+            }
+        }
+    }
+}

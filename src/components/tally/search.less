@@ -1,0 +1,99 @@
+.search{
+    flex: 1;
+    :global{
+        .search{
+            // width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            .am-search-input{
+                // flex: none!important;
+            }
+            .am-search{
+                background: #fff;
+                padding: 0px;
+                height: 70px;
+                .am-search-input{
+                    border: 1PX solid #979797;
+                }
+                
+            }
+        }
+        .container{
+            height: 100%;
+        }
+        .container-right{
+                width: 100%;
+                float: left;
+                box-sizing: border-box;
+                border-top: 1PX solid #979797;
+                height: 100%;
+                overflow-y: auto;
+                ul{
+                    li{
+                        width: 100%;
+                        overflow: hidden;
+                        .icon{
+                            width: 100px;
+                            height: 100px;
+                            border: 1PX solid #979797;
+                            border-radius: 10px;
+                            margin: 30px;
+                            float: left;
+                            overflow: hidden;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .container-text{
+                            overflow: hidden;
+                            padding: 30px 0px;
+                            border-bottom: 1PX solid #979797;
+                            .title{
+                                font-family: "PingFangSC-Regular";
+                                color: #000;
+                                margin-bottom: 10px;
+                                font-size: 30px;
+                            }
+                            .info{
+                                font-size: 25px;
+                                .price{
+                                    color: #FF370C;
+                                    margin-right:10px;
+                                    font-family: "HelveticaNeue-Medium";
+                                }
+                                .num{
+                                    color: rgba(0,0,0,0.25);
+                                }
+                                .control{
+                                    float: right;
+                                    .com{
+                                        display: inline-block;
+                                        width:35px;
+                                        height: 35px;
+                                        border:1PX solid #108EE9;
+                                        border-radius: 12px;
+                                        color: #108EE9;
+                                        font-size: 35px;
+                                        text-align: center;
+                                        line-height: 30px;
+                                    }
+                                    .com:active{
+                                        background: #ccc;
+                                    }
+                                    .number{
+                                        font-size: 30px;
+                                        margin:0px 20px;
+                                    }
+                                    .add{
+                                        margin-right: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+    }
+}

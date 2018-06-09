@@ -1,0 +1,49 @@
+.popupMoadl{
+    :global{
+         .popup-list{
+            .am-list-item .am-input-label.am-input-label-5 {
+                width: 2.1rem;
+            }
+            .am-checkbox-wrapper {
+                margin-left: 0;
+            }
+
+            .am-list-header{
+                >div{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .cancel{
+                    color: rgba(0,0,0,0.65);
+                }
+                .affirm{
+                    color: #1692EB;
+                }
+                .title{
+                    font-size:35px;
+                }
+            }
+            >.am-list-body{
+                max-height: 6rem;
+                overflow-y: auto;
+                .am-list-header{
+                    text-align: center;
+                    font-size: 34px;
+                }
+            }
+            .am-list-body div:not(:last-child) .am-list-line:after{
+                width: 690px!important;
+            }
+            .am-list-content{
+                text-align: center!important;
+                color: rgba(0,0,0,0.85)!important;
+                font-size: 34px!important;
+                padding: 20px 0px!important;
+            }
+            .active .am-list-content{
+                color: rgba(22,146,235,0.85)!important;
+            }
+        }
+    }
+}

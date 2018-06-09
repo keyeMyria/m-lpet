@@ -1,0 +1,160 @@
+.addVipMain{
+    :global{
+        .time_content{
+            display: flex;
+            padding: 0px 30px;
+            justify-content: space-between;
+            align-items: center;
+            height: 88px;
+            >div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .time{
+            width: 50px;
+            height: 50px;
+            background: url(../../assets/time.png) no-repeat;
+            background-size: 100% 100%;
+            margin-left: 10px;
+        }
+        .am-switch input[type="checkbox"]:checked + .checkbox{
+            background: #108EE9;
+        }
+        .add{
+            .am-list-body{
+                background: #F6F8FA;
+            }
+            .am-list-item{
+                background: transparent;
+            }
+        }
+        .input{
+
+            .am-list-item.am-input-item:nth-child(1),.am-list-item.am-input-item:nth-child(2){
+                .am-input-control{
+                    position: relative;
+                    overflow:initial;
+                    &:after{
+                        content: '*';
+                        display: inline-block;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: -20px;
+                        color: #FF370C;
+                    }
+                }
+            }
+        }
+        .info_container{
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .dog_info{
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #FFC293;
+            border-radius: 16px;
+            overflow: hidden;
+            .info_header{
+                height: 60px;
+                background: #FEF3EB;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid #FFC293;
+                .info_name{
+                    margin-left: 20px;
+                }
+                .icon{
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 20px;
+                    background: url(../../assets/remove.png) no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+
+
+        .info_container{
+            .am-list-line{
+                border-bottom: 1px solid #ddd;
+            }
+            .am-list-item.am-input-item:nth-child(1){
+            .am-input-control{
+                position: relative;
+                overflow:initial;
+                &:after{
+                    content: '*';
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -20px;
+                    color: #FF370C;
+                }
+
+            }
+        }
+        }
+
+        .am-list-extra{
+            overflow: initial!important;
+            flex-basis:initial!important;
+            >div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .am-input-extra{
+            >div{
+                display: flex;
+            }
+        }
+        .am-list-content{
+            >div{
+                display: flex;
+                justify-content: space-around;
+                .am-checkbox-wrapper{
+                    margin-left: 0px;
+                    font-size: 30px;
+                }
+            }
+        }
+        .addPet{
+            width: 200px;
+            height: 180px;
+            border: 1px solid #979797;
+            border-radius: 30px;
+            margin: 0 auto;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+            img{
+                width: 60px;
+                margin-bottom: 20px;
+            }
+        }
+        .am-list-item .am-list-line .am-list-arrow-horizontal{
+            display: none;
+        }
+
+        .submit{
+            position: fixed;
+            width: 100%;
+            left: 0px;
+            bottom: 0px;
+        }
+        .submit_fixed{
+            width: 100%;
+            height: 94px;
+        }
+    }
+}

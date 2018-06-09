@@ -1,0 +1,43 @@
+.popupMoadl{
+    :global{
+         .popup-list{
+            .am-list-header{
+                >div{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .title{
+                    font-size:35px;
+                    color: #000;
+                }
+            }
+            >.am-list-body{
+                max-height: 6rem;
+                overflow-y: auto;
+                .am-list-header{
+                    text-align: center;
+                    font-size: 34px;
+                }
+            }
+            .am-list-body div:not(:last-child) .am-list-line:after{
+                width: 690px!important;
+            }
+            .am-list-content{
+                text-align: left!important;
+                color: rgba(0,0,0,0.85)!important;
+                font-size: 34px!important;
+                padding: 20px 0px!important;
+            }
+            .am-list-extra{
+                color: #108EE9;
+            }
+            .active{
+                background: #EEF6FC;
+            }
+            .active .am-list-content{
+                color: #108EE9!important;
+            }
+        }
+    }
+}

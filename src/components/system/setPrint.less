@@ -1,0 +1,23 @@
+.setPrint{
+    background: #F6F8FA;
+    min-height: e("calc(100% - 0.9rem)");
+    :global{
+        label{
+            width: auto;
+        }
+        .am-switch input[type="checkbox"]:checked + .checkbox {
+            background: #008EE1;
+        }
+        .am-list{
+            .am-list-item{
+                height: 110px;
+            }
+            .am-list-item.am-textarea-item {
+                height: auto;
+            }
+        }
+        .submit{
+            padding: 70px 30px;
+        }
+    }
+}

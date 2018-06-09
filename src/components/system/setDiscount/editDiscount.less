@@ -1,0 +1,62 @@
+.editDiscount{
+    background: #F6F8FA;
+    min-height: e("calc(100% - 0.9rem)");
+    position: relative;
+    :global{
+        .list{
+            padding:30px;
+            background: #fff;
+            .item{
+                display: flex;
+                align-items: center;
+                font-size: 30px;
+                margin-top: 40px;
+                &:first-child{
+                    margin-top: 0px;
+                }
+                >span{
+                    display: block;
+                    width: 150px;
+                }
+                .input-control{
+                    flex: 1;
+                    padding: 15px 30px;
+                    border-radius: 10px;
+                    border: 1PX solid #B2B4B6;
+                    position: relative;
+                    input{
+                        border: none;
+                        outline: none;
+                        height: 40px;
+                        width: 100%;
+                    }
+                    span{
+                        position: absolute;
+                        right: 20px;
+                        color: #BABABA;
+                    }
+                }
+            }
+        }
+        .edit-footer{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            .edit-info{
+                margin-bottom: 30px;
+                text-align: center;
+                font-size: 28px;
+                color: #ADAFB0;
+                p{
+                    span{
+                        color: #FF370C;
+                    }
+                    a{
+                        color: #53B6FD;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.vipManage {
+    background: #F6F8FA;
+    min-height: e("calc(100% - 0.9rem)");
+    position: relative;
+    :global {
+        .addBtn {
+            display: inline-block;
+            padding: 15px 20px;
+            padding-left: 60px;
+            font-size: 34px;
+            color: #1692EB;
+            border: 1PX solid #1692EB;
+            border-radius: 10px;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                background: url(../../assets/add.png) no-repeat;
+                background-size: 100% 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+            }
+            &:active {
+                color: #fff;
+                background: #1692EB;
+                &::after {
+                    background: url(../../assets/add-active.png) no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+        .kong-content {
+            height: e("calc(100vh - 1.84rem)");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .kong {
+                text-align: center;
+                >img {
+                    width: 110px;
+                    height: 110px;
+                }
+                p {
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    font-size: 30px;
+                    color: #ACAEAF;
+                }
+            }
+        }
+        .card-list {
+            padding: 20px;
+            text-align: center;
+            height: e("calc(100vh - 1.84rem)");
+            overflow-y: auto;
+            .addBtn{
+                margin-top: 85px;
+                margin-bottom: 80px;
+            }
+        }
+        .submit {
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            left: 0px;
+        }
+    }
+}

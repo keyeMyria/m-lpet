@@ -1,0 +1,77 @@
+.storeAffirm{
+    min-height: e("calc(100% - 0.9rem)");
+    background: #F6F8FA;
+    :global{
+        .must{
+            position: relative;
+            &:before{
+                content: '*';
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                left: 30px;
+                color: #FF370C;
+            }
+        }
+        .am-list{
+            .am-list-item{
+                height: 110px;
+                padding-left: 60px;
+            }
+        }
+        .addPic{
+            .title{
+                padding: 20px 50px;
+                color: #878889;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .pic-content{
+                width: 100%;
+                height: 360px;
+                background: #fff;
+                
+            }
+        }
+
+        .submit{
+            margin-top: 70px;
+            padding: 0px 30px;
+            p{
+                margin-top: 15px;
+                text-align: center;
+                font-size: 28px;
+                a{
+                    color: #1692EB;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+:global{
+    .img-alert{
+        text-align: left;
+        color: #000;
+        padding-left: 70px;
+        li{
+            position: relative;
+            &::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: #000;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                left: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

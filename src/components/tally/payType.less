@@ -1,0 +1,249 @@
+.pay{
+    :global{
+        .pay_header{
+            padding: 30px;
+            padding-bottom: 0px;
+            background: #F6F8FA;
+            p{
+                text-align: center;
+                color: rgba(0,0,0,0.85);
+            }
+        }
+        .pay_content{
+            .pay_row{
+                padding: 30px 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 100vw;
+                    height: 1PX;
+                    background:  #C1C1C1;
+                    position: absolute;
+                    left: -30px;
+                    bottom: 0px;
+                }
+                .pay_item{
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+                    width: 33%;
+                    .pay_icon{
+                        width: 100px;
+                        height: 70px;
+                        border-radius: 16px;
+                        margin-right: 20px;
+                    }
+                    .icon1{
+                        background: url(../../assets/cash.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon2{
+                        background: url(../../assets/wx.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon3{
+                        background: url(../../assets/zfb.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon4{
+                        background: url(../../assets/yhk.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon5{
+                        background: url(../../assets/vipCard.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon6{
+                        background: url(../../assets/yajing.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .pay_text{
+                        color: rgba(0,0,0,0.45);
+                        transition: all .3s;
+                        font-size: 30px;
+                    }
+                }
+                .disabled{
+                    opacity: .5;
+                }
+                .active{
+
+                    .icon1{
+                        background: url(../../assets/cash_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon2{
+                        background: url(../../assets/wx_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon3{
+                        background: url(../../assets/zfb_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon4{
+                        background: url(../../assets/yhk_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon5{
+                        background: url(../../assets/vipCard_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .icon6{
+                        background: url(../../assets/yajing_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .pay_text{
+                        color: #000;
+                    }
+                }
+
+            }
+        }
+        .pay_main{
+            .am-input-control{
+                input{
+                    text-align: right;
+                    color: rgba(0,0,0,1);
+                    font-weight: 300;
+                }
+                .am-list-item .am-input-label{
+                    color: #000;
+                }
+            }
+            .am-list-item{
+                padding: 10px 0px 10px 30px;
+                height: auto!important;
+            }
+            .am-list-extra{
+                span{
+                    display: inline-block;
+                    width: 160px;
+                    height: 60px;
+                    border: 1PX solid #B2B4B6;
+                    text-align: center;
+                    line-height: 60px;
+                    overflow: hidden;
+                    .am-input-item{
+                        padding: 0px;
+                        min-height: 0px;
+                        input{
+                            text-align: center;
+                            color: #FF370C;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            h2{
+                font-weight: 400;
+                color: rgba(0,0,0,0.85);
+            }
+            .am-list-content{
+
+                p{
+                    font-size: 30px;
+                    font-weight: 100;
+                }
+            }
+            .am-list-line{
+                overflow: inherit;
+            }
+            .am-list-body div:not(:last-child) .am-list-line:after{
+                bottom: -0.1rem;
+            }
+            .am-list-item{
+                overflow: inherit;
+            }
+            .am-list-item .am-list-line .am-list-extra{
+                overflow: inherit;
+                >div{
+                    display: flex;
+                    align-items: center;
+                    color: #108EE9;
+                    justify-content: flex-end;
+                }
+            }
+
+            .huiyuan{
+                .am-list-line:after{
+                    display: none;
+                }
+            }
+            .pay_huiyuan{
+                padding-left: 60px;
+            }
+
+            .pay_huiyuan:nth-child(2){
+                .am-list-line:after{
+                    display: none;
+                }
+            }
+
+          .presentMoney{
+            font-family: PingFangSC-Light;
+            font-size: 0.24rem;
+            color: rgba(0,0,0,0.45);
+            letter-spacing: 0;
+            line-height: 50px;
+          }
+        }
+
+    }
+}
+
+
+
+.normal {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
+    box-shadow: 0 -1PX 4px 5px rgba(219,219,219,0.50);
+    overflow: hidden;
+    :global{
+        .left{
+            float: left;
+            display: flex;
+            align-items: center;
+            width: 65%;
+            height: 100%;
+            .icon{
+                margin-left: 50px;
+                position: relative;
+            }
+            h2{
+                font-size: 45px;
+                margin: 0;
+                color: #FF370C;
+                margin-left: 20px;
+            }
+        }
+        .right{
+            width:35%;
+            height: 100%;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #DEDFE0;
+            color: #fff;
+            font-weight: bold;
+            float: left;
+            transition: all .3s;
+        }
+        .active{
+            background: #1692EB;
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 120px;
+}

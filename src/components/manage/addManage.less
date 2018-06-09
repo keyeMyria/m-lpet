@@ -1,0 +1,153 @@
+.addManageListMain{
+    :global{
+        .must{
+            position: relative;
+            &:before{
+                content: '*';
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                left: 10px;
+                color: #FF370C;
+            }
+        }
+        .manage_list{
+            .am-input-extra{
+                .com{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }   
+        
+        .am-list-extra{
+            .com{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                
+            }
+        }
+        .card_type{
+            width: 100%;
+            padding-top: 20px;
+            background: #F6F8FA;
+            text-align: center;
+            border-top: 1PX solid #979797;
+            p{
+                color: rgba(0,0,0,0.23);
+                font-size: 30px;
+                margin-bottom: 10px;
+                img{
+                    height: 40px;
+                    width: 40px;
+                    margin-left: 10px;
+                }
+            }
+            .type_content{
+                .am-tabs-bar .am-tabs-tab{
+                    background: transparent;
+                }
+                // .am-tabs-tab>div{
+                //     width: 220px;
+                //     height: 80px;
+                //     border: 1PX solid #AFB2B5;
+                //     border-radius: 10px;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     font-size: 30px;
+                //     color: rgba(0,0,0,0.23);
+                //     .icon{
+                //         width: 40px;
+                //         height: 30px;
+                //     }
+                //     .text{
+                //         overflow: hidden;
+                //         text-overflow: ellipsis;
+                //         white-space: nowrap;
+                //     }
+                // }
+                // .am-tabs-tab{
+                //     margin-right: 10px;
+                //     .icon{
+                //         background: url(../../assets/manage.png) no-repeat;
+                //         background-size: 100% 100%;
+                //         margin-right: 10px;
+                //     } 
+                // }
+
+                .card2{
+                    margin-left: 10px;
+                    .icon{
+                        background: url(../../assets/serve.png) no-repeat;
+                        background-size: 100% 100%;
+                        margin-right: 10px;
+                    }
+                }
+                .card1.active{
+                    border: 1PX solid #1692EB;
+                    background: #F5FBFF;
+                    .icon{
+                        background: url(../../assets/manage_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .text{
+                        color: rgba(0,0,0,0.85);
+                    }
+                }
+
+                .card2.active{
+                    border: 1PX solid #1692EB;
+                    background: #F5FBFF;
+                    .icon{
+                        background: url(../../assets/serve_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .text{
+                        color: rgba(0,0,0,0.85);
+                    }
+                }
+            }
+
+            
+        }
+        input{
+            text-align: right;
+        }
+        .hint{
+            overflow: hidden;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            .hint_icon{
+                width: 40px;
+                height: 40px;
+                background: url(../../assets/hint.png) no-repeat;
+                background-size: 100% 100%;
+                float: left;
+                margin-right: 20px;
+            }
+            .hint_text{
+                overflow: hidden;
+                color: #FF370C;
+                font-size: 30px;
+            }
+        }
+        
+        .submit{
+            width: 100%;
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+        }
+        .submit_fixed{
+            width: 100%;
+            height: 94px;
+        }
+    }
+}

@@ -1,0 +1,232 @@
+.vipRefill{
+    :global{
+        .am-list-body{
+            max-height: 100px;
+        }
+        
+         .card_type{
+            width: 100%;
+            padding: 20px 0px;
+            background: #F6F8FA;
+            text-align: center;
+            border-top: 1px solid #979797;
+            p{
+                color: rgba(0,0,0,0.23);
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .type_content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .card_item{
+                    width: 220px;
+                    height: 80px;
+                    border: 1px solid #AFB2B5;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                    color: rgba(0,0,0,0.23);
+                    .icon{
+                        width: 40px;
+                        height: 30px;
+                    }
+                }
+                .card1{
+                    margin-right: 10px;
+                    .icon{
+                        background: url(../../assets/card1.png) no-repeat;
+                        background-size: 100% 100%;
+                        margin-right: 10px;
+                    } 
+                }
+
+                .card2{
+                    margin-left: 10px;
+                    .icon{
+                        background: url(../../assets/card2.png) no-repeat;
+                        background-size: 100% 100%;
+                        margin-right: 10px;
+                    }
+                }
+                .card1.active{
+                    border: 1px solid #1692EB;
+                    .icon{
+                        background: url(../../assets/card1_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .text{
+                        color: rgba(0,0,0,0.85);
+                    }
+                }
+
+                .card2.active{
+                    border: 1px solid #1692EB;
+                    .icon{
+                        background: url(../../assets/card2_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .text{
+                        color: rgba(0,0,0,0.85);
+                    }
+                }
+            }
+
+            
+        }
+
+
+        .refill_content{
+            .am-list-extra{
+                flex-basis:initial;
+            }
+            .refill_type{
+                .refill_lists{
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .refill_item{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .icon{
+                            width: 90px;
+                            height: 60px;
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                            margin-right: 10px;
+                        }
+                        .text{
+                            font-size:28px;
+                            color: rgba(0,0,0,0.45);
+                        }
+                    }
+                    .refill_item:nth-child(1){
+                        .icon{
+                            background-image: url(../../assets/cash.png);
+                        }
+                    }
+                    .refill_item:nth-child(2){
+                        .icon{
+                            background-image: url(../../assets/wx.png);
+                        }
+                    }
+                    .refill_item:nth-child(3){
+                        .icon{
+                            background-image: url(../../assets/zfb.png);
+                        }
+                    }
+                    .refill_item:nth-child(4){
+                        .icon{
+                            background-image: url(../../assets/yhk.png);
+                        }
+                    }
+                    .refill_item.active{
+                        .text{
+                            color: #000;
+                        }
+                    }
+                    .refill_item:nth-child(1).active{
+                        .icon{
+                            background-image: url(../../assets/cash_active.png);
+                        }
+                    }
+                    .refill_item:nth-child(2).active{
+                        .icon{
+                            background-image: url(../../assets/wx_active.png);
+                        }
+                    }
+                    .refill_item:nth-child(3).active{
+                        .icon{
+                            background-image: url(../../assets/zfb_active.png);
+                        }
+                    }
+                    .refill_item:nth-child(4).active{
+                        .icon{
+                            background-image: url(../../assets/yhk_active.png);
+                        }
+                    }
+                }
+                .payType{
+                    margin-top: 20px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .left{
+                        .pay_info{
+                            margin-top: 10px;
+                            color: rgba(0,0,0,0.45);
+                            font-size: 30px;
+                        }
+                    }
+                    .right{
+                        width: 160px;
+                        height: 60px;
+                        // border: 1px solid #B2B4B6;
+                        text-align: center;
+                        line-height: 60px;
+                        .am-list-item {
+                            height: 100%;
+                            padding: 0px;
+                            min-height: 0px;
+                            input{
+                                height: 100%;
+                                padding: 0px;
+                                text-align: center;
+                                color: #FF370C;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .com{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                .am-list-extra{
+                    >div{
+                        width: 160px;
+                        height: 60px;
+                        // border: 1px solid #B2B4B6;
+                        text-align: center;
+                        line-height: 60px;
+                        float: right;
+                    }
+                    .am-list-item {
+                            height: 100%;
+                            padding: 0px;
+                            min-height: 0px;
+                            input{
+                                height: 100%;
+                                padding: 0px;
+                                text-align: right;
+                            }
+                        }
+                }
+                .com_extra{
+                    border: none!important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+         .submit{
+            width: 100%;
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+        }
+        .submit_fixed{
+            width: 100%;
+            height: 94px;
+        }
+
+    }
+}

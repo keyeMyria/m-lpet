@@ -1,0 +1,239 @@
+.vipCardMain{
+    :global{
+        .card_type{
+            width: 100%;
+            padding: 20px 0px;
+            background: #F6F8FA;
+            text-align: center;
+            border-top: 1px solid #979797;
+            p{
+                color: rgba(0,0,0,0.23);
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .type_content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .card_item{
+                    width: 220px;
+                    height: 80px;
+                    border: 1px solid #AFB2B5;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                    color: rgba(0,0,0,0.23);
+                    .icon{
+                        width: 40px;
+                        height: 30px;
+                    }
+                }
+                .card1{
+                    margin-right: 10px;
+                    .icon{
+                        background: url(../../assets/card1.png) no-repeat;
+                        background-size: 100% 100%;
+                        margin-right: 10px;
+                    } 
+                }
+
+                .card2{
+                    margin-left: 10px;
+                    .icon{
+                        background: url(../../assets/card2.png) no-repeat;
+                        background-size: 100% 100%;
+                        margin-right: 10px;
+                    }
+                }
+                .card1.active{
+                    border: 1px solid #1692EB;
+                    .icon{
+                        background: url(../../assets/card1_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .text{
+                        color: rgba(0,0,0,0.85);
+                    }
+                }
+
+                .card2.active{
+                    border: 1px solid #1692EB;
+                    .icon{
+                        background: url(../../assets/card2_active.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .text{
+                        color: rgba(0,0,0,0.85);
+                    }
+                }
+            }
+
+            
+        }
+
+        .card_content{
+            .am-list-extra{
+                flex-basis: initial;
+            }
+            .time_content{
+                display: flex;
+                padding: 0px 30px;
+                justify-content: space-between;
+                align-items: center;
+                height: 88px;
+                >div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .com{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+            .am-list-item .am-list-line .am-list-arrow-horizontal{
+                display: none;
+            }
+            .time{
+                width: 50px;
+                height: 50px;
+                background: url(../../assets/time.png) no-repeat;
+                background-size: 100% 100%;
+                margin-left: 10px;
+            }
+            .am-input-control{
+                input{
+                    text-align: right;
+                }
+            }
+            .am-list-item .am-input-label{
+                overflow: initial;
+                .am-checkbox-wrapper{
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .reapply_content{
+            padding: 20px;
+            .reapply_card{
+                border: 1px solid #C5CCD2;
+                border-radius: 16px;
+                overflow: hidden;
+                .card_header{
+                    background: #F6F8FA;
+                    display: flex;
+                    justify-content: space-between;
+                    padding:10px 20px;
+                    box-sizing: border-box;
+                    .right{
+                       width: 40px;
+                       height: 40px;
+                       background: url(../../assets/unfold.png) no-repeat;
+                       background-size: 100% 100%;
+                    }
+                    .active{
+                        background: url(../../assets/up.png) no-repeat;
+                       background-size: 100% 100%;
+                    }
+                }
+                .card_lists{
+                    .num{
+                        .am-list-item {
+                            height: 100%;
+                            padding: 0px;
+                            min-height: 0px;
+                            input{
+                                height: 100%;
+                                padding: 0px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .am-list-extra{
+                        >div{
+                            width: 150px;
+                            height: 70px;
+                            border: 1px solid #B2B4B6;
+                            text-align: center;
+                            line-height: 70px;
+                            float: right;
+                        }
+                    }
+
+                }
+
+                
+            }
+        }
+        .hint{
+            overflow: hidden;
+            padding: 20px;
+            .hint_icon{
+                width: 40px;
+                height: 40px;
+                background: url(../../assets/hint.png) no-repeat;
+                background-size: 100% 100%;
+                float: left;
+                margin-right: 20px;
+            }
+            .hint_text{
+                overflow: hidden;
+                color: #FF370C;
+                font-size: 30px;
+            }
+        }
+        
+        .submit{
+            width: 100%;
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+        }
+        .submit_fixed{
+            width: 100%;
+            height: 94px;
+        }
+
+    }
+}
+
+:global{
+        .popup-list{
+        .am-list-header{
+            >div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .cancel{
+                color: rgba(0,0,0,0.65);
+            }
+            .affirm{
+                color: #1692EB;
+            }
+            .title{
+                font-size:35px;
+            }
+        }
+        .am-list-body{
+            max-height: 6rem;
+            overflow-y: auto;
+        }
+        .am-list-body div:not(:last-child) .am-list-line:after{
+            width: 690px!important;
+        }
+        .am-list-content{
+            text-align: center!important;
+            color: rgba(0,0,0,0.85)!important;
+            font-size: 34px!important;
+            padding: 20px 0px!important;
+        }
+        .active .am-list-content{
+            color: rgba(22,146,235,0.85)!important;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.setRemind{
+    background: #F6F8FA;
+    min-height: e("calc(100% - 0.9rem)");
+    position: relative;
+    :global{
+        .remind-list{
+            label{
+                width: auto;
+                height: auto;
+            }
+            .remind-item{
+                .remind-header{
+                    height: 100px;
+                    padding: 0 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1PX solid #C1C1C1;
+                    
+                    .dx{
+                        color: #FFBD93;
+                    }
+                }
+                .remind-content{
+                    background: #fff;
+                    padding: 0 30px;
+                    .remind-content-item{
+                        border-bottom: 1PX solid #C1C1C1;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 110px;
+                        .am-checkbox-inner {
+                            border-radius: 50%;
+                        }                       
+                        &:last-child{
+                            border: none;
+                        }
+                        .input{
+                            .input-control{
+                                display: inline-block;
+                                width: 180px;
+                                padding: 8px 10px;
+                                border-radius: 10px;
+                                border: 1PX solid #B2B4B6;
+                                position: relative;
+                                input{
+                                    border: none;
+                                    outline: none;
+                                    height: 40px;
+                                    width: 75%;
+                                }
+                                span{
+                                    position: absolute;
+                                    right: 20px;
+                                    color: #BABABA;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                
+                
+            }
+        }
+        .submit{
+            padding: 0px 30px;
+            margin-top: 170px;
+        }
+    }
+}
